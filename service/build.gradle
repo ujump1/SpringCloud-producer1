@@ -24,9 +24,7 @@ dependencies {
         exclude group: 'com.google.code.gson' // 排除gson
     }
     // https://mvnrepository.com/artifact/org.springframework.cloud/spring-cloud-starter-openfeign
-    implementation('org.springframework.cloud:spring-cloud-starter-netflix-eureka-server:2.2.4.RELEASE') {
-        exclude group: 'javax.servlet' // 排除tomcat和 javax.servlet:servlet-api:2.5冲突
-    }
+    compile group: 'org.springframework.cloud', name: 'spring-cloud-starter-openfeign', version: '2.2.2.RELEASE'
 
 
 
