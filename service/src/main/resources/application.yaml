@@ -1,15 +1,6 @@
 spring:
   application:
     name: spring-cloud-producer
-#  cloud:
-#    consul:
-#      host: localhost
-#      port: 8500
-#      discovery:
-#        enabled: true
-#        register: true
-#        service-name: ${spring.application.name}
-#        instance-id: ${spring.application.name}:${server.port}
 server:
   port: 9001
 
@@ -21,9 +12,3 @@ eureka:
     #不注册该服务
     #register-with-eureka: false
 
-
-#consul配置
-#spring.cloud.consul.host=127.0.0.1
-#spring.cloud.consul.port=8500
-#spring.cloud.consul.discovery.register=true
-#spring.cloud.consul.discovery.service-name= ${spring.application.name}
